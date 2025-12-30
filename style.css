@@ -1,0 +1,85 @@
+:root {
+  --main: #7b2cbf;   /* yahan se color change ho sakta hai */
+  --bg: #0f0f1a;
+  --card: #1a1a2e;
+  --text: #ffffff;
+  --muted: #b5b5c3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px 15px;
+  background: var(--card);
+}
+
+.header p {
+  color: var(--muted);
+  margin-top: 5px;
+}
+
+/* Search */
+.search-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-box input {
+  width: 90%;
+  max-width: 420px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* Anime list */
+.anime-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card */
+.anime-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.anime-card:hover {
+  transform: translateY(-5px);
+}
+
+.anime-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.anime-card h3 {
+  margin: 10px 0;
+}
+
+.anime-card a {
+  display: inline-block;
+  padding: 10px 15px;
+  background: var(--main);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
